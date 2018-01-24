@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === 'development') {
     });
 }
 
-app.listen(3000, () => {
+app.listen(parseInt(process.env.PORT, 10) || 3000, () => {
   console.log('server is now running')
 })
 export default app;
