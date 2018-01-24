@@ -26,7 +26,6 @@ module.exports = merge(common, {
       filename: 'index.html'
     }),
     new Dotenv({
-      path: './env',
       systemvars: true
     })
   ],
